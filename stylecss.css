@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    background: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+}
+
+.container .left{
+    position: relative;
+    background: #167266;
+    padding: 40px;
+
+}
+
+.container .right{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profileText .profileImg{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+     
+}
+
+.profileText .profileImg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #101212;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+
+
+.info{
+    padding: 20px;
+}
+
+.title{
+    color: #060606;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+
+}
+
+.info ul{
+    position: relative;
+}
+
+.info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: black;     
+}
+
+.Info ul li span{
+    color: #0f0e0e;
+    font-weight: 200;
+}
+
+.Info.education h4{
+    font-weight: 500;
+    color: #070707;
+}
+
+.Info.education h4{
+    color: #0b0a0a;
+    font-weight: 300;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0px;
+}
+
+
+
+.title2{
+    color: #167266;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    color:#0b0a0a;
+}
+
+.year_company h5{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #0b0a0a;
+}
+
+.year_company p{
+    font-style: normal;
+    font-size: 1.2em;
+    color: #0b0a0a;
+}
+
+
+.text2{
+    font-style: inherit;
+    color:#060606;
+}
+
+.Experience .bos{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Experience .bos h4{
+    font-size: 1.1em;
+    font-style: inherit;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+}
+
+
+.Experience .bos .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+
+.Experience .bos .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #06f6d7;
+}
+
+
+.item2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: black;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+@media(max-width : 600px){
+    .about.box{
+        flex-direction: column;
+    }
+
+    .about .box .year_company{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .interst ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .Experience .bos{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
